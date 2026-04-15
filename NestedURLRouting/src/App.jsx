@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Home from "./components/Home";
 import Explore from "./components/Explore";
 import Profile from "./components/Profile";
@@ -22,8 +21,10 @@ function App(){
             <Route path='/home' element={<Home/>}/>
             <Route path='/explore' element={<Explore/>}/>
             <Route path='/profile' element={<Profile/>}>
-              <Route path='/profile/photos' element={<Photos/>}/>
-              <Route path='/profile/reels' element={<Reels/>}/>
+              {/* <Route path='/profile/photos' element={<Photos/>}/>
+              <Route path='/profile/reels' element={<Reels/>}/> */}
+              <Route path='photos' element={<Photos/>}/>
+              <Route path='reels' element={<Reels/>}/>
             </Route>
             
           </Routes>
